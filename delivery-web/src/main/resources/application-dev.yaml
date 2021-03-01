@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  devtools:
+    restart:
+      enabled: false
+
+  thymeleaf:
+    cache: false
+
+
