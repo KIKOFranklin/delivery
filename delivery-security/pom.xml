@@ -8,17 +8,17 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.mochasoft</groupId>
-    <artifactId>delivery-service</artifactId>
+    <artifactId>delivery-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>delivery-service</name>
-    <description>service</description>
+    <name>delivery-security</name>
+    <description>security</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>com.mochasoft</groupId>
-            <artifactId>delivery-security</artifactId>
+            <artifactId>delivery-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
