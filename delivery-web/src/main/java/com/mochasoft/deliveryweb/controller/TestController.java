@@ -18,12 +18,14 @@ import java.util.UUID;
 /**
  * @author KIKOFranklin
  * @create 2021/3/1 0001 14:03
+ * @deprecated 初级测试结束 抛弃此类
  */
 @RestController
+@Deprecated
 @Api(value = "类的描述", tags = {"TestController接口"})
 public class TestController {
 
-    @Autowired(required = false)
+    @Autowired
     private UserService userService;
 
     @RequestMapping("/index")
