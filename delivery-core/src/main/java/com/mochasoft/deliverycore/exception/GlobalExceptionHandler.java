@@ -32,4 +32,13 @@ public class GlobalExceptionHandler {
         return ResponseData.failure(message);
     }
 
+    /**
+     * 拦截业务异常，返回状态码500
+     */
+    @ExceptionHandler(TokenValidateException.class)
+    public ResponseData tokenValidateError(TokenValidateException e) {
+        log.error("token验证异常:", e);
+        return ResponseData.failure(e.getCode(), e.getMessage());
+    }
+
 }
