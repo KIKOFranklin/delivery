@@ -35,7 +35,7 @@ public class MenuController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public String createMenu() {
+    public String createMenu(@RequestBody Menu menu) {
         return null;
     }
 
