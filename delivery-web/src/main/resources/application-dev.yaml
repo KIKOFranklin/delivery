@@ -14,3 +14,7 @@ spring:
     cache: false
 
 
+logging:
+  config: classpath:log/logback-spring.xml
+  file:
+    path: ./log
