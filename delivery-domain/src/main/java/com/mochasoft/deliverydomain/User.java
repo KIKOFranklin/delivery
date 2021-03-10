@@ -4,8 +4,9 @@ import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Builder;
 import lombok.Data;
+import org.apache.ibatis.type.JdbcType;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * @author KIKOFranklin
@@ -58,11 +59,11 @@ public class User extends Model<User> {
     /**
      * 创建时间.
      */
-    @TableField(value = "CREATE_TIME", fill = FieldFill.INSERT)
-    private LocalDateTime createTime;
+    @TableField(value = "CREATE_TIME", fill = FieldFill.INSERT, jdbcType = JdbcType.TIMESTAMP)
+    private Date createTime;
     /**
      * 最后修改时间.
      */
-    @TableField(value = "LAST_MODIFIED_TIME", fill = FieldFill.INSERT_UPDATE)
-    private LocalDateTime lastModifiedTime;
+    @TableField(value = "LAST_MODIFIED_TIME", fill = FieldFill.INSERT_UPDATE, jdbcType = JdbcType.TIMESTAMP)
+    private Date lastModifiedTime;
 }
