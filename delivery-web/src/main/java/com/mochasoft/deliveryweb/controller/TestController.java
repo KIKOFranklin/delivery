@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -55,7 +57,8 @@ public class TestController {
                 userIdentifier("00112323").
                 userCompany("摩卡软件").
                 userDept("南京开发部").
-                userCanteen("大食堂").build();
+                userCanteen("大食堂").
+                build();
         //Active Record用法
         user.insert();
 
