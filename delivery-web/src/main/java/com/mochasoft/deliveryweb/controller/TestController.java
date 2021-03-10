@@ -22,7 +22,9 @@ import java.util.UUID;
  * @create 2021/3/1 0001 14:03
  * @deprecated 初级测试结束 抛弃此类
  */
+
 @RestController
+@RequestMapping("/test")
 @Deprecated
 @Api(value = "类的描述", tags = {"TestController接口"})
 public class TestController {
@@ -31,11 +33,13 @@ public class TestController {
     private UserService userService;
 
     @RequestMapping("/index")
+    @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public String test01(){
         return "Hello World";
     }
 
     @RequestMapping("/get")
+    @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public User test02(){
 //        User user = new User();
 //        user.setId("1");
@@ -44,6 +48,7 @@ public class TestController {
     }
 
     @RequestMapping("/insert")
+    @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public String test03(){
         User user = User.builder().
                 cardId("0010001").
@@ -56,10 +61,12 @@ public class TestController {
                 build();
         //Active Record用法
         user.insert();
+
         return "插入成功";
     }
 
     @RequestMapping("/update")
+    @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public String test04(){
         User user = User.builder().build();
         userService.update(user);
@@ -84,6 +91,7 @@ public class TestController {
     }
 
     @RequestMapping("/login")
+    @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public Object test06(String userName, String passWord){
         JSONObject jsonObject=new JSONObject();
         // 检验用户是否存在(为了简单，这里假设用户存在，并制造一个uuid假设为用户id)
@@ -101,6 +109,7 @@ public class TestController {
 
     @RequestMapping("/jwt")
     @JwtToken
+    @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public String test07(){
         return "验证成功!";
     }

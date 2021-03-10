@@ -19,11 +19,11 @@ public class JwtInterceptor implements HandlerInterceptor {
         // 从 http 请求头中取出 token
         String token = httpServletRequest.getHeader("token");
         // 如果不是映射到方法直接通过
-        if(!(object instanceof HandlerMethod)){
+        if (!(object instanceof HandlerMethod)) {
             return true;
         }
-        HandlerMethod handlerMethod=(HandlerMethod)object;
-        Method method=handlerMethod.getMethod();
+        HandlerMethod handlerMethod = (HandlerMethod) object;
+        Method method = handlerMethod.getMethod();
         //检查有没有需要用户权限的注解
         if (method.isAnnotationPresent(JwtToken.class)) {
             JwtToken jwtToken = method.getAnnotation(JwtToken.class);
