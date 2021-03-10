@@ -35,27 +35,30 @@ public class TestController {
 
     @RequestMapping("/get")
     public User test02(){
-        User user = new User();
-        user.setId("1");
-        return userService.findSingleUser(user);
+//        User user = new User();
+//        user.setId("1");
+//        return userService.findSingleUser(user);
+        return null;
     }
 
     @RequestMapping("/insert")
     public String test03(){
-        User user = new User();
-        user.setId("3");
-        user.setName("Dave");
-        user.setPwd("123");
+        User user = User.builder().
+                cardId("0010001").
+                userName("王家豪").
+                userMobile("18855619371").
+                userIdentifier("00112323").
+                userCompany("摩卡软件").
+                userDept("南京开发部").
+                userCanteen("大食堂").build();
         //Active Record用法
         user.insert();
-        return "返回成功";
+        return "插入成功";
     }
 
     @RequestMapping("/update")
     public String test04(){
-        User user = new User();
-        user.setId("1");
-        user.setName("xupengfei");
+        User user = User.builder().build();
         userService.update(user);
         return "返回成功";
     }

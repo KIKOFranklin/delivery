@@ -9,5 +9,9 @@ import java.util.List;
  * @create 2021/3/3 0003 16:18
  */
 public interface MenuService {
-    public List<Menu> getMenu();
+    /**
+     * 获取菜单集合.
+     * @return List<Menu>
+     */
+    List<Menu> getMenu();
 }
