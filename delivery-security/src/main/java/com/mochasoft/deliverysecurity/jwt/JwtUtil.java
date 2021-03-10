@@ -6,6 +6,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.Date;
 
@@ -25,6 +26,7 @@ public class JwtUtil {
 
     /**
      * 生成签名，五分钟后过期
+     *
      * @param userId
      * @return
      */
@@ -46,6 +48,7 @@ public class JwtUtil {
 
     /**
      * 根据token获取userId
+     *
      * @param token
      * @return
      */
@@ -60,6 +63,7 @@ public class JwtUtil {
 
     /**
      * 校验token
+     *
      * @param token
      * @return
      */

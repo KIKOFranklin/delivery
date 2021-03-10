@@ -22,6 +22,7 @@ import java.util.UUID;
  */
 
 @RestController
+@RequestMapping("/test")
 @Deprecated
 @Api(value = "类的描述", tags = {"TestController接口"})
 public class TestController {
@@ -57,6 +58,7 @@ public class TestController {
                 userCanteen("大食堂").build();
         //Active Record用法
         user.insert();
+
         return "插入成功";
     }
 
