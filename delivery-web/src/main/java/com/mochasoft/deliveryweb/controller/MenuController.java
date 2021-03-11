@@ -1,11 +1,13 @@
 package com.mochasoft.deliveryweb.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.mochasoft.deliverycore.response.ResponseData;
 import com.mochasoft.deliverydomain.Menu;
 import com.mochasoft.deliveryservice.MenuService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * @author KIKOFranklin
@@ -13,6 +15,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/menu")
+@Api(value = "菜单接口", tags = {"MenuController接口"})
 public class MenuController {
     /**
      * 菜单Service.
@@ -24,29 +27,56 @@ public class MenuController {
      * 获取所有菜单.
      * @return 菜单List.
      */
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public List<Menu> getMenus(){
-        return menuService.getMenu();
+    @GetMapping("/")
+    @ApiOperation(value = "获取所有菜单信息", notes = "获取所有菜单信息", httpMethod = "GET", response = ResponseData.class)
+    public ResponseData getMenus(){
+        return ResponseData.success(menuService.getMenu());
     }
 
-    @RequestMapping(value = "/{flag}", method = RequestMethod.GET)
-    public Menu getMenuItem(@PathVariable String flag) {
-        return null;
+    /**
+     * 获取特定菜单.
+     * @param flag 参数
+     * @return 菜单实体
+     */
+    @GetMapping("/{flag}")
+    @ApiOperation(value = "获取单个菜单信息", notes = "路径参数flag为传入的menuId", httpMethod = "GET", response = ResponseData.class)
+    public ResponseData getMenuItem(@PathVariable String flag) {
+        QueryWrapper<Menu> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("MENU_ID", flag);
+        return ResponseData.success(menuService.getOne(queryWrapper));
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
-    public String createMenu() {
-        return null;
+    /**
+     * 创建菜单.
+     * @return 系统提示.
+     */
+    @PostMapping("/")
+    @ApiOperation(value = "保存菜单信息", notes = "menuId不能为空", httpMethod = "POST", response = ResponseData.class)
+    public ResponseData createMenu(@RequestBody final Menu menu) {
+        return menuService.save(menu) ? ResponseData.success("保存成功") : ResponseData.failure("保存失败");
     }
 
-    @RequestMapping(value = "/{flag}", method = RequestMethod.PUT)
-    public String edit(@PathVariable String flag) {
-        return null;
+    /**
+     * 编辑菜单.
+     * @return 系统提示
+     */
+    @PutMapping("/")
+    @ApiOperation(value = "编辑菜单信息", notes = "menuId不能为空", httpMethod = "PUT", response = ResponseData.class)
+    public ResponseData edit(@RequestBody final Menu menu) {
+        return menuService.updateById(menu) ? ResponseData.success("修改成功") : ResponseData.failure("修改失败");
     }
-
-    @RequestMapping(value = "/{flag}", method = RequestMethod.DELETE)
-    public String delete(@PathVariable String flag) {
-        return null;
+    /**
+     * 删除菜单.
+     * @param flag 参数
+     * @return 系统提示
+     */
+    @DeleteMapping("/{flag}")
+    @ApiOperation(value = "删除菜单信息", notes = "menuId不能为空", httpMethod = "DELETE", response = ResponseData.class)
+    public ResponseData delete(@PathVariable String flag) {
+        QueryWrapper<Menu> queryWrapper  = new QueryWrapper<>();
+        queryWrapper.eq("MENU_ID", flag);
+        return menuService.remove(queryWrapper) ?
+                ResponseData.success("删除成功") : ResponseData.failure("删除失败");
     }
 
 }

@@ -1,6 +1,7 @@
 package com.mochasoft.deliveryservice.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mochasoft.deliverydao.mapper.MenuMapper;
 import com.mochasoft.deliverydomain.Menu;
 import com.mochasoft.deliveryservice.MenuService;
@@ -19,7 +20,7 @@ import static org.apache.commons.lang3.StringUtils.isBlank;
  * @create 2021/3/3 0003 16:21
  */
 @Service
-public class MenuServiceImpl implements MenuService {
+public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements MenuService {
     /**
      * 菜单Mapper.
      */

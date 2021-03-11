@@ -37,10 +37,10 @@ public class CodeGenerator {
         dsc.setPassword("password");
         mpg.setDataSource(dsc);
 
-        // 3、包配置
+        //3、包配置
 //        PackageConfig pc = new PackageConfig();
-//        pc.setModuleName("sys");
-//        pc.setParent("com.lcy.demo");
+//        pc.setModuleName("delivery");
+//        pc.setParent("com.mochasoft.delivery");
 //        mpg.setPackageInfo(pc);
 
         // 4、策略配置
@@ -49,9 +49,9 @@ public class CodeGenerator {
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
 //        strategy.setSuperControllerClass("com.lcy.demo.sys.controller.BaseController");
 //        strategy.setSuperEntityClass("com.lcy.demo.sys.entity.BaseEntity");
-        // strategy.setTablePrefix("t_"); // 表名前缀
+         strategy.setTablePrefix("su_"); // 表名前缀su
         strategy.setEntityLombokModel(true); //使用lombok
-        strategy.setInclude("su_delivery_user");  // 逆向工程使用的表   如果要生成多个,这里可以传入String[]
+        strategy.setInclude("delivery_user");  // 逆向工程使用的表   如果要生成多个,这里可以传入String[]
         mpg.setStrategy(strategy);
 
         //5、执行
