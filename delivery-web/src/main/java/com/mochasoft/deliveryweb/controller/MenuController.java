@@ -1,6 +1,7 @@
 package com.mochasoft.deliveryweb.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mochasoft.deliverycore.response.ResponseData;
 import com.mochasoft.deliverydomain.Menu;
 import com.mochasoft.deliveryservice.MenuService;
@@ -40,10 +41,16 @@ public class MenuController {
      */
     @GetMapping("/{flag}")
     @ApiOperation(value = "获取单个菜单信息", notes = "路径参数flag为传入的menuId", httpMethod = "GET", response = ResponseData.class)
-    public ResponseData getMenuItem(@PathVariable String flag) {
+    public ResponseData getMenuItem(@PathVariable final String flag) {
         QueryWrapper<Menu> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("MENU_ID", flag);
         return ResponseData.success(menuService.getOne(queryWrapper));
+    }
+
+    @GetMapping("/{current}/{size}")
+    @ApiOperation(value = "分页查询菜单信息", notes = "current当前页 size当前页数据长度", httpMethod = "GET", response = ResponseData.class)
+    public ResponseData getMenusByPage(@PathVariable final Long current, @PathVariable final Long size){
+        return ResponseData.success(menuService.page(new Page<>(current, size)));
     }
 
     /**
@@ -72,7 +79,7 @@ public class MenuController {
      */
     @DeleteMapping("/{flag}")
     @ApiOperation(value = "删除菜单信息", notes = "menuId不能为空", httpMethod = "DELETE", response = ResponseData.class)
-    public ResponseData delete(@PathVariable String flag) {
+    public ResponseData delete(@PathVariable final String flag) {
         QueryWrapper<Menu> queryWrapper  = new QueryWrapper<>();
         queryWrapper.eq("MENU_ID", flag);
         return menuService.remove(queryWrapper) ?

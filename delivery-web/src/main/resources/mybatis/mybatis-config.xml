@@ -20,5 +20,5 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<typeAlias alias="LinkedList" type="java.util.LinkedList" />
 	</typeAliases>
 
-	
+
 </configuration>
