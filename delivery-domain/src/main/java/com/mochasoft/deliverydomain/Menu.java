@@ -3,9 +3,12 @@ package com.mochasoft.deliverydomain;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 import java.util.Collection;
 
 /**
@@ -13,8 +16,13 @@ import java.util.Collection;
  * @create 2021/3/3 0003 15:42
  */
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @TableName(value = "su_delivery_menu_tree")
-public class Menu {
+public class Menu implements Serializable {
+
+    private static final long serialVersionUID=1L;
     /**
      * 菜单ID.
      */
@@ -59,5 +67,5 @@ public class Menu {
      * 子菜单集合.
      */
     @TableField(exist = false)
-    private Collection<Menu> childrenMenu = new ArrayList<>();
+    private Collection<Menu> childrenMenu;
 }

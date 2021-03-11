@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baomidou.mapper.SuDeliveryUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baomidou.entity.SuDeliveryUser">
+        <id column="ID" property="id" />
+        <result column="CARD_ID" property="cardId" />
+        <result column="USER_NAME" property="userName" />
+        <result column="USER_MOBILE" property="userMobile" />
+        <result column="USER_IDENTIFIER" property="userIdentifier" />
+        <result column="USER_COMPANY" property="userCompany" />
+        <result column="USER_DEPT" property="userDept" />
+        <result column="USER_CANTEEN" property="userCanteen" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="LAST_MODIFIED_TIME" property="lastModifiedTime" />
+    </resultMap>
+
+</mapper>

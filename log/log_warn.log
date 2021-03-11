@@ -1,0 +1,47 @@
+2021-03-11 14:29:29.197 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-03-11 14:32:20.604 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-03-11 15:26:05.475 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.mochasoft.deliverycore.response.ResponseData com.mochasoft.deliveryweb.controller.MenuController.edit(com.mochasoft.deliverydomain.Menu)]
+2021-03-11 15:34:06.217 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.mochasoft.deliverycore.response.ResponseData com.mochasoft.deliveryweb.controller.MenuController.edit(com.mochasoft.deliverydomain.Menu)]
+2021-03-11 15:40:42.677 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 15:41:39.221 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 15:42:57.748 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 15:43:18.502 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
+### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
+### The error may involve com.mochasoft.deliverydao.mapper.MenuMapper.selectOne
+### The error occurred while handling results
+### SQL: SELECT  MENU_ID,MENU_ORDER,IS_PARENT,IS_EXT_LINK,MENU_URL,SUPER_MENU_ID,MENU_NAME,IS_OPEN_WIN  FROM su_delivery_menu_tree     WHERE (MENU_ID = ?)
+### Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8]
+2021-03-11 15:44:14.317 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 15:45:47.533 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 15:49:03.094 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 15:53:20.091 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 15:55:36.376 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 15:58:58.028 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
+### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
+### The error may involve com.mochasoft.deliverydao.mapper.MenuMapper.selectOne
+### The error occurred while handling results
+### SQL: SELECT  MENU_ID,MENU_ORDER,IS_PARENT,IS_EXT_LINK,MENU_URL,SUPER_MENU_ID,MENU_NAME,IS_OPEN_WIN  FROM su_delivery_menu_tree     WHERE (MENU_ID = ?)
+### Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8]
+2021-03-11 15:59:16.383 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
+### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
+### The error may involve com.mochasoft.deliverydao.mapper.MenuMapper.selectOne
+### The error occurred while handling results
+### SQL: SELECT  MENU_ID,MENU_ORDER,IS_PARENT,IS_EXT_LINK,MENU_URL,SUPER_MENU_ID,MENU_NAME,IS_OPEN_WIN  FROM su_delivery_menu_tree     WHERE (MENU_ID = ?)
+### Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8]
+2021-03-11 16:02:30.806 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 16:03:28.478 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
+; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
+2021-03-11 16:12:18.440 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.mochasoft.deliverycore.response.ResponseData com.mochasoft.deliveryweb.controller.MenuController.edit(com.mochasoft.deliverydomain.Menu)]
+2021-03-11 16:12:49.321 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='et.menuId', mode=IN, javaType=class java.lang.Object, jdbcType=null, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #3 with JdbcType OTHER . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: java.sql.SQLException: 无效的列类型: 1111]
