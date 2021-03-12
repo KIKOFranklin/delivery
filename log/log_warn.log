@@ -45,3 +45,13 @@
 ; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
 2021-03-11 16:12:18.440 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.mochasoft.deliverycore.response.ResponseData com.mochasoft.deliveryweb.controller.MenuController.edit(com.mochasoft.deliverydomain.Menu)]
 2021-03-11 16:12:49.321 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='et.menuId', mode=IN, javaType=class java.lang.Object, jdbcType=null, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #3 with JdbcType OTHER . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: java.sql.SQLException: 无效的列类型: 1111]
+2021-03-11 16:43:55.490 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12519, TNS:no appropriate service handler found
+ 
+### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
+### The error may involve com.mochasoft.deliverydao.mapper.MenuMapper.selectPage
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12519, TNS:no appropriate service handler found
+ ]

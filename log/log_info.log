@@ -1429,3 +1429,459 @@
 2021-03-11 16:16:18.039 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2021-03-11 16:16:18.040 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2021-03-11 16:16:37.758 [http-nio-8080-exec-10] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-11 16:38:57.223 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:38:57.226 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-11 16:38:57.228 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-11 16:39:06.937 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Starting DeliveryWebApplication using Java 1.8.0_201 on DESKTOP-FBP0NNF with PID 15452 (D:\JetBrains\mocha\delivery\delivery-web\target\classes started by 80603 in D:\JetBrains\mocha\delivery)
+2021-03-11 16:39:06.943 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - The following profiles are active: dev,druid
+2021-03-11 16:39:07.058 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-11 16:39:07.059 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-11 16:39:09.353 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-03-11 16:39:09.369 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:39:09.370 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-11 16:39:09.370 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-11 16:39:09.515 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-11 16:39:09.515 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2453 ms
+2021-03-11 16:39:10.743 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-11 16:39:10.836 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:39:10.891 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-03-11 16:39:10.932 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-03-11 16:39:11.118 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:39:11.145 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-11 16:39:11.146 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-11 16:39:11.173 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-11 16:39:11.243 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-11 16:39:11.452 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_1
+2021-03-11 16:39:11.453 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_2
+2021-03-11 16:39:11.454 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_3
+2021-03-11 16:39:11.456 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_4
+2021-03-11 16:39:11.456 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_5
+2021-03-11 16:39:11.457 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_6
+2021-03-11 16:39:11.458 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_7
+2021-03-11 16:39:11.467 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_1
+2021-03-11 16:39:11.468 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_2
+2021-03-11 16:39:11.469 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_3
+2021-03-11 16:39:11.470 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_4
+2021-03-11 16:39:11.471 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_5
+2021-03-11 16:39:11.472 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_6
+2021-03-11 16:39:11.473 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_7
+2021-03-11 16:39:11.475 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_1
+2021-03-11 16:39:11.476 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_2
+2021-03-11 16:39:11.477 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_3
+2021-03-11 16:39:11.478 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_4
+2021-03-11 16:39:11.479 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_5
+2021-03-11 16:39:11.480 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_6
+2021-03-11 16:39:11.481 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_7
+2021-03-11 16:39:11.482 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_1
+2021-03-11 16:39:11.483 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_2
+2021-03-11 16:39:11.484 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_3
+2021-03-11 16:39:11.484 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_4
+2021-03-11 16:39:11.485 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_5
+2021-03-11 16:39:11.486 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_6
+2021-03-11 16:39:11.487 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_7
+2021-03-11 16:39:11.494 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_1
+2021-03-11 16:39:11.495 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_2
+2021-03-11 16:39:11.496 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_3
+2021-03-11 16:39:11.497 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_4
+2021-03-11 16:39:11.497 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_5
+2021-03-11 16:39:11.498 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_6
+2021-03-11 16:39:11.499 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_7
+2021-03-11 16:39:11.503 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_1
+2021-03-11 16:39:11.504 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_2
+2021-03-11 16:39:11.505 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_3
+2021-03-11 16:39:11.506 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_4
+2021-03-11 16:39:11.507 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_5
+2021-03-11 16:39:11.508 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_6
+2021-03-11 16:39:11.509 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_7
+2021-03-11 16:39:11.510 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_1
+2021-03-11 16:39:11.511 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_2
+2021-03-11 16:39:11.512 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_3
+2021-03-11 16:39:11.512 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_4
+2021-03-11 16:39:11.513 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_5
+2021-03-11 16:39:11.514 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_6
+2021-03-11 16:39:11.514 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_7
+2021-03-11 16:39:11.538 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Started DeliveryWebApplication in 5.776 seconds (JVM running for 7.537)
+2021-03-11 16:39:40.255 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 16:39:40.255 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-11 16:39:40.257 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-03-11 16:39:40.979 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-11 16:43:29.936 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:43:29.941 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-11 16:43:29.971 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-11 16:43:36.662 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Starting DeliveryWebApplication using Java 1.8.0_201 on DESKTOP-FBP0NNF with PID 12904 (D:\JetBrains\mocha\delivery\delivery-web\target\classes started by 80603 in D:\JetBrains\mocha\delivery)
+2021-03-11 16:43:36.668 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - The following profiles are active: dev,druid
+2021-03-11 16:43:36.791 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-11 16:43:36.792 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-11 16:43:39.004 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-03-11 16:43:39.016 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:43:39.016 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-11 16:43:39.017 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-11 16:43:39.157 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-11 16:43:39.157 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2364 ms
+2021-03-11 16:43:40.239 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-11 16:43:40.328 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:43:40.393 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-03-11 16:43:40.439 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-03-11 16:43:40.650 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:43:40.678 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-11 16:43:40.679 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-11 16:43:40.707 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-11 16:43:40.786 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-11 16:43:41.004 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_1
+2021-03-11 16:43:41.005 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_2
+2021-03-11 16:43:41.006 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_3
+2021-03-11 16:43:41.008 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_4
+2021-03-11 16:43:41.009 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_5
+2021-03-11 16:43:41.010 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_6
+2021-03-11 16:43:41.011 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_7
+2021-03-11 16:43:41.023 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_1
+2021-03-11 16:43:41.024 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_2
+2021-03-11 16:43:41.024 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_3
+2021-03-11 16:43:41.025 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_4
+2021-03-11 16:43:41.026 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_5
+2021-03-11 16:43:41.026 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_6
+2021-03-11 16:43:41.027 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_7
+2021-03-11 16:43:41.029 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_1
+2021-03-11 16:43:41.030 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_2
+2021-03-11 16:43:41.030 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_3
+2021-03-11 16:43:41.031 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_4
+2021-03-11 16:43:41.032 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_5
+2021-03-11 16:43:41.032 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_6
+2021-03-11 16:43:41.033 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_7
+2021-03-11 16:43:41.034 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_1
+2021-03-11 16:43:41.035 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_2
+2021-03-11 16:43:41.036 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_3
+2021-03-11 16:43:41.037 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_4
+2021-03-11 16:43:41.037 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_5
+2021-03-11 16:43:41.038 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_6
+2021-03-11 16:43:41.039 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_7
+2021-03-11 16:43:41.047 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_1
+2021-03-11 16:43:41.048 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_2
+2021-03-11 16:43:41.050 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_3
+2021-03-11 16:43:41.051 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_4
+2021-03-11 16:43:41.052 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_5
+2021-03-11 16:43:41.053 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_6
+2021-03-11 16:43:41.054 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_7
+2021-03-11 16:43:41.058 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_1
+2021-03-11 16:43:41.059 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_2
+2021-03-11 16:43:41.060 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_3
+2021-03-11 16:43:41.061 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_4
+2021-03-11 16:43:41.062 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_5
+2021-03-11 16:43:41.063 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_6
+2021-03-11 16:43:41.064 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_7
+2021-03-11 16:43:41.065 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_1
+2021-03-11 16:43:41.066 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_2
+2021-03-11 16:43:41.067 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_3
+2021-03-11 16:43:41.067 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_4
+2021-03-11 16:43:41.068 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_5
+2021-03-11 16:43:41.068 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_6
+2021-03-11 16:43:41.069 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_7
+2021-03-11 16:43:41.106 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Started DeliveryWebApplication in 5.439 seconds (JVM running for 7.015)
+2021-03-11 16:43:55.054 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 16:43:55.054 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-11 16:43:55.055 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-03-11 16:43:55.415 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-11 16:47:13.260 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:47:13.262 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-11 16:47:13.266 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-11 16:47:17.798 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Starting DeliveryWebApplication using Java 1.8.0_201 on DESKTOP-FBP0NNF with PID 19536 (D:\JetBrains\mocha\delivery\delivery-web\target\classes started by 80603 in D:\JetBrains\mocha\delivery)
+2021-03-11 16:47:17.804 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - The following profiles are active: dev,druid
+2021-03-11 16:47:17.892 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-11 16:47:17.892 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-11 16:47:20.148 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-03-11 16:47:20.160 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:47:20.161 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-11 16:47:20.161 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-11 16:47:20.303 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-11 16:47:20.304 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2410 ms
+2021-03-11 16:47:21.350 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-11 16:47:21.442 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:47:21.503 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-03-11 16:47:21.544 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-03-11 16:47:21.733 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:47:21.758 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-11 16:47:21.760 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-11 16:47:21.785 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-11 16:47:21.854 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-11 16:47:22.043 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_1
+2021-03-11 16:47:22.045 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_2
+2021-03-11 16:47:22.046 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_3
+2021-03-11 16:47:22.046 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_4
+2021-03-11 16:47:22.047 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_5
+2021-03-11 16:47:22.048 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_6
+2021-03-11 16:47:22.049 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_7
+2021-03-11 16:47:22.058 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_1
+2021-03-11 16:47:22.059 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_2
+2021-03-11 16:47:22.060 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_3
+2021-03-11 16:47:22.061 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_4
+2021-03-11 16:47:22.062 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_5
+2021-03-11 16:47:22.063 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_6
+2021-03-11 16:47:22.064 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_7
+2021-03-11 16:47:22.066 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_1
+2021-03-11 16:47:22.066 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_2
+2021-03-11 16:47:22.067 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_3
+2021-03-11 16:47:22.068 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_4
+2021-03-11 16:47:22.068 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_5
+2021-03-11 16:47:22.069 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_6
+2021-03-11 16:47:22.070 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_7
+2021-03-11 16:47:22.071 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_1
+2021-03-11 16:47:22.072 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_2
+2021-03-11 16:47:22.073 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_3
+2021-03-11 16:47:22.074 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_4
+2021-03-11 16:47:22.075 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_5
+2021-03-11 16:47:22.075 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_6
+2021-03-11 16:47:22.076 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_7
+2021-03-11 16:47:22.083 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_1
+2021-03-11 16:47:22.084 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_2
+2021-03-11 16:47:22.085 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_3
+2021-03-11 16:47:22.086 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_4
+2021-03-11 16:47:22.087 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_5
+2021-03-11 16:47:22.088 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_6
+2021-03-11 16:47:22.089 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_7
+2021-03-11 16:47:22.092 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_1
+2021-03-11 16:47:22.093 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_2
+2021-03-11 16:47:22.094 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_3
+2021-03-11 16:47:22.095 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_4
+2021-03-11 16:47:22.096 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_5
+2021-03-11 16:47:22.097 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_6
+2021-03-11 16:47:22.098 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_7
+2021-03-11 16:47:22.099 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_1
+2021-03-11 16:47:22.100 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_2
+2021-03-11 16:47:22.101 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_3
+2021-03-11 16:47:22.102 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_4
+2021-03-11 16:47:22.102 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_5
+2021-03-11 16:47:22.103 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_6
+2021-03-11 16:47:22.103 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_7
+2021-03-11 16:47:22.133 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Started DeliveryWebApplication in 5.263 seconds (JVM running for 6.818)
+2021-03-11 16:47:28.310 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 16:47:28.310 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-11 16:47:28.312 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-03-11 16:47:29.159 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-11 16:49:05.107 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:49:05.110 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-11 16:49:05.148 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-11 16:49:09.746 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Starting DeliveryWebApplication using Java 1.8.0_201 on DESKTOP-FBP0NNF with PID 19708 (D:\JetBrains\mocha\delivery\delivery-web\target\classes started by 80603 in D:\JetBrains\mocha\delivery)
+2021-03-11 16:49:09.750 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - The following profiles are active: dev,druid
+2021-03-11 16:49:09.834 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-11 16:49:09.834 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-11 16:49:11.930 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-03-11 16:49:11.942 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:49:11.943 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-11 16:49:11.943 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-11 16:49:12.082 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-11 16:49:12.083 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2247 ms
+2021-03-11 16:49:13.152 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-11 16:49:13.242 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:49:13.293 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-03-11 16:49:13.331 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-03-11 16:49:13.525 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:49:13.549 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-11 16:49:13.550 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-11 16:49:13.574 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-11 16:49:13.632 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-11 16:49:13.845 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_1
+2021-03-11 16:49:13.846 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_2
+2021-03-11 16:49:13.847 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_3
+2021-03-11 16:49:13.848 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_4
+2021-03-11 16:49:13.848 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_5
+2021-03-11 16:49:13.849 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_6
+2021-03-11 16:49:13.850 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_7
+2021-03-11 16:49:13.862 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_1
+2021-03-11 16:49:13.863 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_2
+2021-03-11 16:49:13.864 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_3
+2021-03-11 16:49:13.865 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_4
+2021-03-11 16:49:13.865 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_5
+2021-03-11 16:49:13.866 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_6
+2021-03-11 16:49:13.867 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_7
+2021-03-11 16:49:13.870 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_1
+2021-03-11 16:49:13.870 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_2
+2021-03-11 16:49:13.871 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_3
+2021-03-11 16:49:13.872 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_4
+2021-03-11 16:49:13.873 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_5
+2021-03-11 16:49:13.874 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_6
+2021-03-11 16:49:13.874 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_7
+2021-03-11 16:49:13.877 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_1
+2021-03-11 16:49:13.878 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_2
+2021-03-11 16:49:13.879 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_3
+2021-03-11 16:49:13.880 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_4
+2021-03-11 16:49:13.881 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_5
+2021-03-11 16:49:13.882 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_6
+2021-03-11 16:49:13.883 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_7
+2021-03-11 16:49:13.892 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_1
+2021-03-11 16:49:13.892 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_2
+2021-03-11 16:49:13.893 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_3
+2021-03-11 16:49:13.894 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_4
+2021-03-11 16:49:13.895 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_5
+2021-03-11 16:49:13.896 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_6
+2021-03-11 16:49:13.897 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_7
+2021-03-11 16:49:13.900 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_1
+2021-03-11 16:49:13.901 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_2
+2021-03-11 16:49:13.902 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_3
+2021-03-11 16:49:13.903 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_4
+2021-03-11 16:49:13.904 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_5
+2021-03-11 16:49:13.905 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_6
+2021-03-11 16:49:13.906 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_7
+2021-03-11 16:49:13.907 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_1
+2021-03-11 16:49:13.908 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_2
+2021-03-11 16:49:13.908 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_3
+2021-03-11 16:49:13.909 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_4
+2021-03-11 16:49:13.910 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_5
+2021-03-11 16:49:13.910 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_6
+2021-03-11 16:49:13.911 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_7
+2021-03-11 16:49:13.941 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Started DeliveryWebApplication in 5.102 seconds (JVM running for 6.735)
+2021-03-11 16:49:18.208 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 16:49:18.209 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-11 16:49:18.210 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-03-11 16:49:18.977 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-11 16:53:17.309 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:53:17.312 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-11 16:53:17.336 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-11 16:53:22.225 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Starting DeliveryWebApplication using Java 1.8.0_201 on DESKTOP-FBP0NNF with PID 2812 (D:\JetBrains\mocha\delivery\delivery-web\target\classes started by 80603 in D:\JetBrains\mocha\delivery)
+2021-03-11 16:53:22.230 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - The following profiles are active: dev,druid
+2021-03-11 16:53:22.329 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-11 16:53:22.330 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-11 16:53:24.457 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-03-11 16:53:24.470 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:53:24.470 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-11 16:53:24.471 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-11 16:53:24.644 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-11 16:53:24.645 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2314 ms
+2021-03-11 16:53:25.715 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-11 16:53:25.810 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:53:25.864 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-03-11 16:53:25.904 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-03-11 16:53:26.094 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-11 16:53:26.117 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-11 16:53:26.119 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-11 16:53:26.144 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-11 16:53:26.197 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-11 16:53:26.402 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_1
+2021-03-11 16:53:26.403 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_2
+2021-03-11 16:53:26.404 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_3
+2021-03-11 16:53:26.405 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_4
+2021-03-11 16:53:26.406 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_5
+2021-03-11 16:53:26.407 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_6
+2021-03-11 16:53:26.407 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_7
+2021-03-11 16:53:26.418 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_1
+2021-03-11 16:53:26.419 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_2
+2021-03-11 16:53:26.419 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_3
+2021-03-11 16:53:26.420 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_4
+2021-03-11 16:53:26.421 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_5
+2021-03-11 16:53:26.422 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_6
+2021-03-11 16:53:26.423 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_7
+2021-03-11 16:53:26.426 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_1
+2021-03-11 16:53:26.426 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_2
+2021-03-11 16:53:26.427 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_3
+2021-03-11 16:53:26.428 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_4
+2021-03-11 16:53:26.429 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_5
+2021-03-11 16:53:26.430 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_6
+2021-03-11 16:53:26.430 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_7
+2021-03-11 16:53:26.432 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_1
+2021-03-11 16:53:26.433 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_2
+2021-03-11 16:53:26.433 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_3
+2021-03-11 16:53:26.434 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_4
+2021-03-11 16:53:26.435 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_5
+2021-03-11 16:53:26.435 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_6
+2021-03-11 16:53:26.436 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_7
+2021-03-11 16:53:26.443 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_1
+2021-03-11 16:53:26.444 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_2
+2021-03-11 16:53:26.445 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_3
+2021-03-11 16:53:26.446 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_4
+2021-03-11 16:53:26.447 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_5
+2021-03-11 16:53:26.448 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_6
+2021-03-11 16:53:26.448 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_7
+2021-03-11 16:53:26.452 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_1
+2021-03-11 16:53:26.453 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_2
+2021-03-11 16:53:26.454 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_3
+2021-03-11 16:53:26.455 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_4
+2021-03-11 16:53:26.456 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_5
+2021-03-11 16:53:26.457 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_6
+2021-03-11 16:53:26.458 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_7
+2021-03-11 16:53:26.459 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_1
+2021-03-11 16:53:26.460 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_2
+2021-03-11 16:53:26.461 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_3
+2021-03-11 16:53:26.461 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_4
+2021-03-11 16:53:26.462 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_5
+2021-03-11 16:53:26.463 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_6
+2021-03-11 16:53:26.463 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_7
+2021-03-11 16:53:26.493 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Started DeliveryWebApplication in 5.194 seconds (JVM running for 6.79)
+2021-03-11 16:53:30.172 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 16:53:30.173 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-11 16:53:30.174 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-03-11 16:53:31.056 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-11 16:58:52.095 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-11 16:58:52.097 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-11 16:58:52.158 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-11 17:04:04.459 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Starting DeliveryWebApplication using Java 1.8.0_201 on DESKTOP-FBP0NNF with PID 10400 (D:\JetBrains\mocha\delivery\delivery-web\target\classes started by 80603 in D:\JetBrains\mocha\delivery)
+2021-03-11 17:04:04.464 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - The following profiles are active: dev,druid
+2021-03-11 17:04:04.561 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-11 17:04:04.561 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-11 17:04:06.912 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-03-11 17:04:06.927 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-11 17:04:06.928 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-11 17:04:06.928 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-11 17:04:07.075 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-11 17:04:07.075 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2512 ms
+2021-03-11 17:04:08.282 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-11 17:04:08.387 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-11 17:04:08.450 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-03-11 17:04:08.491 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-03-11 17:04:08.714 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-11 17:04:08.740 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-11 17:04:08.741 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-11 17:04:08.771 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-11 17:04:08.857 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-11 17:04:09.096 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_1
+2021-03-11 17:04:09.097 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_2
+2021-03-11 17:04:09.098 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_3
+2021-03-11 17:04:09.099 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_4
+2021-03-11 17:04:09.099 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_5
+2021-03-11 17:04:09.100 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_6
+2021-03-11 17:04:09.101 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test01UsingGET_7
+2021-03-11 17:04:09.113 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_1
+2021-03-11 17:04:09.115 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_2
+2021-03-11 17:04:09.116 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_3
+2021-03-11 17:04:09.117 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_4
+2021-03-11 17:04:09.118 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_5
+2021-03-11 17:04:09.119 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_6
+2021-03-11 17:04:09.119 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test02UsingGET_7
+2021-03-11 17:04:09.121 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_1
+2021-03-11 17:04:09.122 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_2
+2021-03-11 17:04:09.123 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_3
+2021-03-11 17:04:09.125 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_4
+2021-03-11 17:04:09.126 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_5
+2021-03-11 17:04:09.126 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_6
+2021-03-11 17:04:09.127 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test03UsingGET_7
+2021-03-11 17:04:09.129 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_1
+2021-03-11 17:04:09.130 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_2
+2021-03-11 17:04:09.131 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_3
+2021-03-11 17:04:09.131 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_4
+2021-03-11 17:04:09.132 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_5
+2021-03-11 17:04:09.133 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_6
+2021-03-11 17:04:09.134 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test04UsingGET_7
+2021-03-11 17:04:09.144 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_1
+2021-03-11 17:04:09.145 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_2
+2021-03-11 17:04:09.147 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_3
+2021-03-11 17:04:09.148 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_4
+2021-03-11 17:04:09.149 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_5
+2021-03-11 17:04:09.150 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_6
+2021-03-11 17:04:09.151 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test05UsingGET_7
+2021-03-11 17:04:09.155 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_1
+2021-03-11 17:04:09.156 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_2
+2021-03-11 17:04:09.157 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_3
+2021-03-11 17:04:09.158 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_4
+2021-03-11 17:04:09.159 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_5
+2021-03-11 17:04:09.161 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_6
+2021-03-11 17:04:09.162 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test06UsingGET_7
+2021-03-11 17:04:09.163 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_1
+2021-03-11 17:04:09.165 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_2
+2021-03-11 17:04:09.166 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_3
+2021-03-11 17:04:09.167 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_4
+2021-03-11 17:04:09.168 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_5
+2021-03-11 17:04:09.169 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_6
+2021-03-11 17:04:09.170 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: test07UsingGET_7
+2021-03-11 17:04:09.217 [restartedMain] INFO  com.mochasoft.deliveryweb.DeliveryWebApplication - Started DeliveryWebApplication in 5.772 seconds (JVM running for 7.355)
+2021-03-11 17:04:22.463 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-11 17:04:22.464 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-11 17:04:22.465 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-03-11 17:04:23.231 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited

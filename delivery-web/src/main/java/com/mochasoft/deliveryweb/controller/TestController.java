@@ -69,7 +69,7 @@ public class TestController {
     @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public String test04(){
         User user = User.builder().build();
-        userService.update(user);
+//        userService.update(user);
         return "返回成功";
     }
 
@@ -87,7 +87,8 @@ public class TestController {
             @ApiResponse(code = 500, message = "服务器不能完成请求")}
     )
     public List<User> test05(){
-        return userService.findByPage();
+//        return userService.findByPage();
+        return null;
     }
 
     @RequestMapping("/login")

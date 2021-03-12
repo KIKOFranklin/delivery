@@ -18,3 +18,5 @@ logging:
   config: classpath:log/logback-spring.xml
   file:
     path: ./log
+
+debug: true
