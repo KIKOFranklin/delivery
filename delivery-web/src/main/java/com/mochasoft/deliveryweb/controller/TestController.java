@@ -105,6 +105,7 @@ public class TestController {
         userInfo.put("passWord", passWord);
         jsonObject.put("token", token);
         jsonObject.put("user", userInfo);
+        jsonObject.put("code", 200);
         return jsonObject;
     }
 
@@ -113,6 +114,12 @@ public class TestController {
     @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public String test07(){
         return "验证成功!";
+    }
+
+    @RequestMapping("/info")
+    @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
+    public String tempUserInfo() {
+        return "用户信息!";
     }
 
 }
