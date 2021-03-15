@@ -33,9 +33,9 @@ const actions = {
     const { username, password } = userInfo
     return new Promise((resolve, reject) => {
       login({ username: username.trim(), password: password }).then(response => {
-        const { data } = response
-        commit('SET_TOKEN', data.token)
-        setToken(data.token)
+        console.log(response)
+        commit('SET_TOKEN', response.token)
+        setToken(response.token)
         resolve()
       }).catch(error => {
         reject(error)
@@ -47,17 +47,18 @@ const actions = {
   getInfo({ commit, state }) {
     return new Promise((resolve, reject) => {
       getInfo(state.token).then(response => {
-        const { data } = response
-
-        if (!data) {
-          return reject('Verification failed, please Login again.')
-        }
-
-        const { name, avatar } = data
-
-        commit('SET_NAME', name)
-        commit('SET_AVATAR', avatar)
-        resolve(data)
+        // 获取用户信息部分，先注释掉
+        // const { data } = response
+        //
+        // if (!data) {
+        //   return reject('Verification failed, please Login again.')
+        // }
+        //
+        // const { name, avatar } = data
+        //
+        // commit('SET_NAME', name)
+        // commit('SET_AVATAR', avatar)
+        // resolve(data)
       }).catch(error => {
         reject(error)
       })
