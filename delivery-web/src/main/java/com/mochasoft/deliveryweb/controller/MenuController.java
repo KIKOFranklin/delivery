@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/menu")
-@Api(value = "菜单接口", tags = {"MenuController接口"})
+@Api(value = "菜单信息接口", tags = {"MenuController接口"})
 public class MenuController {
     /**
      * 菜单Service.
