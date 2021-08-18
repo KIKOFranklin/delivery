@@ -34,7 +34,7 @@ public class JwtInterceptor implements HandlerInterceptor {
                 }
                 // 获取 token 中的 userId
                 String userId = JwtUtil.getUserId(token);
-                log.info("userId{}", userId);
+                log.info("userId = {}", userId);
                 // 验证 token
                 JwtUtil.checkSign(token);
             }

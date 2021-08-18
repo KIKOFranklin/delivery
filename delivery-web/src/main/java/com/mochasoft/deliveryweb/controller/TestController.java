@@ -51,13 +51,8 @@ public class TestController {
     @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public String test03(){
         User user = User.builder().
-                cardId("0010001").
                 userName("王家豪").
                 userMobile("18855619371").
-                userIdentifier("00112323").
-                userCompany("摩卡软件").
-                userDept("南京开发部").
-                userCanteen("大食堂").
                 build();
         //Active Record用法
         user.insert();
@@ -94,7 +89,7 @@ public class TestController {
     @RequestMapping("/login")
     @ApiOperation(value = "方法的描述", notes = "分页查询方法", httpMethod = "GET", response = String.class)
     public Object test06(String userName, String passWord){
-        JSONObject jsonObject=new JSONObject();
+        JSONObject jsonObject = new JSONObject();
         // 检验用户是否存在(为了简单，这里假设用户存在，并制造一个uuid假设为用户id)
         String userId = UUID.randomUUID().toString();
         // 生成签名
@@ -121,5 +116,6 @@ public class TestController {
     public String tempUserInfo() {
         return "用户信息!";
     }
+
 
 }

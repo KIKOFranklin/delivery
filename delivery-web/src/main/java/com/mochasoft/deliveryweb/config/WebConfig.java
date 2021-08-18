@@ -1,7 +1,6 @@
 package com.mochasoft.deliveryweb.config;
 
 import com.mochasoft.deliverysecurity.jwt.JwtInterceptor;
-import com.mochasoft.deliverysecurity.jwt.ObssoInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -19,9 +18,6 @@ public class WebConfig implements WebMvcConfigurer {
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-//        registry.addInterceptor(obssoInterceptor())
-//                // 拦截所有请求，判断是否有ObSSOCookie
-//                .addPathPatterns("/**");
         registry.addInterceptor(jwtInterceptor())
                 // 拦截所有请求，通过判断是否有 @JwtToken 注解 决定是否需要登录
                 .addPathPatterns("/**");
@@ -34,13 +30,5 @@ public class WebConfig implements WebMvcConfigurer {
     @Bean
     public JwtInterceptor jwtInterceptor() {
         return new JwtInterceptor();
-    }
-
-    /**
-     * obsso拦截器
-     */
-    @Bean
-    public ObssoInterceptor obssoInterceptor(){
-        return new ObssoInterceptor();
     }
 }

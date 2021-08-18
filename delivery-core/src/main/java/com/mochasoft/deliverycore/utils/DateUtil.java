@@ -1,5 +1,7 @@
 package com.mochasoft.deliverycore.utils;
 
+import org.apache.tomcat.jni.Local;
+
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -220,6 +222,46 @@ public final class DateUtil {
     }
 
     /**
+     * 获取当前日期这一年的第一天
+     * @return 返回日期
+     */
+    public static LocalDate getThisYearBegin(){
+        return LocalDate.now().with(TemporalAdjusters.firstDayOfYear());
+    }
+
+    /**
+     * 获取指定日期这一年的最后一天.
+     * @return 返回日期
+     */
+    public static LocalDate getYearEnd(final LocalDate localDate) {
+        return localDate.with(TemporalAdjusters.lastDayOfYear());
+    }
+
+    /**
+     * 获取指定日期这一年的第一天
+     * @return 返回日期
+     */
+    public static LocalDate getYearBegin(final LocalDate localDate){
+        return localDate.with(TemporalAdjusters.firstDayOfYear());
+    }
+
+    /**
+     * 获取指定日期这一年的最后一天.
+     * @return 返回日期
+     */
+    public static LocalDate getMonthEnd(final LocalDate localDate) {
+        return localDate.with(TemporalAdjusters.lastDayOfMonth());
+    }
+
+    /**
+     * 获取指定日期这一年的第一天
+     * @return 返回日期
+     */
+    public static LocalDate getMonthBegin(final LocalDate localDate){
+        return localDate.with(TemporalAdjusters.firstDayOfMonth());
+    }
+
+    /**
      * 根据当前日期获得几天后的日期.
      * @param date 输入字符型日期
      * @param format 输入排序规则
@@ -332,5 +374,14 @@ public final class DateUtil {
             return getDate(date);
         }
         return null;
+    }
+
+    public static List<LocalDate> get15DaysByNow(){
+        LocalDate localDate = LocalDate.now();
+        List<LocalDate> result = new ArrayList<>();
+        for (long i = -7; i <= 7; i++) {
+            result.add(localDate.plusDays(i));
+        }
+        return result;
     }
 }

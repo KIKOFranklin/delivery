@@ -23,6 +23,15 @@ public class GlobalExceptionHandler {
     }
 
     /**
+     * 拦截业务异常，返回状态码500
+     */
+    @ExceptionHandler(TokenValidateException.class)
+    public ResponseData tokenValidateError(TokenValidateException e) {
+        log.error("token验证异常:", e);
+        return ResponseData.failure(403, e.getMessage());
+    }
+
+    /**
      * 拦截未知的运行时异常，返回状态码500
      */
     @ExceptionHandler(Throwable.class)
@@ -30,15 +39,6 @@ public class GlobalExceptionHandler {
         log.error("运行时异常:", e);
         String message = String.format("服务器运行时异常: %s", e.toString());
         return ResponseData.failure(message);
-    }
-
-    /**
-     * 拦截业务异常，返回状态码500
-     */
-    @ExceptionHandler(TokenValidateException.class)
-    public ResponseData tokenValidateError(TokenValidateException e) {
-        log.error("token验证异常:", e);
-        return ResponseData.failure(e.getCode(), e.getMessage());
     }
 
 }

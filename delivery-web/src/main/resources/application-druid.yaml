@@ -1,10 +1,10 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@172.23.22.101:1521:orcl
-    username: jssupport
-    password: password
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: wang2368821
     initialSize: 5
     minIdle: 5
     maxActive: 20

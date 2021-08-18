@@ -19,7 +19,7 @@ import java.util.Collection;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@TableName(value = "su_delivery_menu_tree")
+@TableName(value = "tb_menu_tree")
 public class Menu implements Serializable {
 
     private static final long serialVersionUID=1L;

@@ -2,10 +2,13 @@ package com.mochasoft.deliverydomain;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.apache.ibatis.type.JdbcType;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -14,18 +17,15 @@ import java.util.Date;
  */
 @Data
 @Builder
-@TableName(value = "su_delivery_user")
+@TableName(value = "tb_user")
+@NoArgsConstructor
+@AllArgsConstructor
 public class User extends Model<User> {
     /**
      * 主键ID.
      */
     @TableId(value = "ID", type = IdType.UUID)
     private String id;
-    /**
-     * 卡号.
-     */
-    @TableField(value = "CARD_ID")
-    private String cardId;
     /**
      * 员工姓名.
      */
@@ -37,33 +37,25 @@ public class User extends Model<User> {
     @TableField(value = "USER_MOBILE")
     private String userMobile;
     /**
-     * 员工编号.
+     * 密码
      */
-    @TableField(value = "USER_IDENTIFIER")
-    private String userIdentifier;
+    @TableField("USER_PWD")
+    private String userPwd;
     /**
-     * 员工所属公司.
+     * 邮箱
      */
-    @TableField(value = "USER_COMPANY")
-    private String userCompany;
-    /**
-     * 员工所属部门.
-     */
-    @TableField(value = "USER_DEPT")
-    private String userDept;
-    /**
-     * 所属二级食堂.
-     */
-    @TableField(value = "USER_CANTEEN")
-    private String userCanteen;
+    @TableField("USER_EMAIL")
+    private String userEmail;
+
     /**
      * 创建时间.
      */
     @TableField(value = "CREATE_TIME", fill = FieldFill.INSERT, jdbcType = JdbcType.TIMESTAMP)
-    private Date createTime;
+    private LocalDate createTime;
+
     /**
      * 最后修改时间.
      */
     @TableField(value = "LAST_MODIFIED_TIME", fill = FieldFill.INSERT_UPDATE, jdbcType = JdbcType.TIMESTAMP)
-    private Date lastModifiedTime;
+    private LocalDate lastModifiedTime;
 }

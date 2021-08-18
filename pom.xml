@@ -6,7 +6,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.4.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mochasoft</groupId>
     <artifactId>delivery</artifactId>
@@ -15,6 +14,16 @@
     <description>Delivery service for JSmobile</description>
     <properties>
         <java.version>1.8</java.version>
+        <mybatis>2.1.4</mybatis>
+        <common-lang3>3.10</common-lang3>
+        <common-lang>2.6</common-lang>
+        <commons-collections>3.2.2</commons-collections>
+        <druid>1.2.4</druid>
+        <fastjson>1.2.47</fastjson>
+        <mybatis-plus>3.2.0</mybatis-plus>
+        <mybatis-plus-generator>3.2.0</mybatis-plus-generator>
+        <velocity-engine-core>2.1</velocity-engine-core>
+        <slf4j>1.7.25</slf4j>
     </properties>
     <packaging>pom</packaging>
     <dependencies>
@@ -29,7 +38,11 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.4</version>
+            <version>${mybatis}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -50,47 +63,47 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.10</version>
+            <version>${common-lang3}</version>
         </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
+            <version>${common-lang}</version>
         </dependency>
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
-            <version>3.2.2</version>
+            <version>${commons-collections}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.2.4</version>
+            <version>${druid}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
+            <version>${fastjson}</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
+            <version>${mybatis-plus}</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.2.0</version>
+            <version>${mybatis-plus-generator}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>
-            <version>2.1</version>
+            <version>${velocity-engine-core}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
+            <version>${slf4j}</version>
         </dependency>
     </dependencies>
     <build>

@@ -15,7 +15,7 @@ public class TokenValidateException extends RuntimeException implements IExcepti
     private final Integer code;
 
     public TokenValidateException(String message) {
-        this(500, message, null);
+        this(403, message, null);
     }
 
 

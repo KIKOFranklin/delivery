@@ -20,3 +20,11 @@ logging:
     path: ./log
 
 debug: true
+
+management:
+  server:
+    port: 8888
+  endpoints:
+    web:
+      exposure:
+        include: '*'
