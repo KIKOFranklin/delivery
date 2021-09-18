@@ -3,12 +3,17 @@ package com.mochasoft.deliveryweb.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mochasoft.deliverycore.response.ResponseData;
+import com.mochasoft.deliverycore.utils.RedisUtil;
 import com.mochasoft.deliverydomain.User;
 import com.mochasoft.deliveryservice.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Objects;
 
 
 /**
@@ -18,12 +23,16 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/user")
 @Api(value = "用户信息接口", tags = {"UserController接口"})
+@Slf4j
 public class UserController {
     /**
      * 用户Service.
      */
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private RedisUtil redisUtil;
 
     /**
      * 分页获取所有用户信息.
@@ -40,9 +49,25 @@ public class UserController {
     @GetMapping("/{id}")
     @ApiOperation(value = "获取单个用户信息", notes = "获取单个用户信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData getUser(@PathVariable final String id){
-        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("ID", id);
-        return ResponseData.success(userService.getOne(queryWrapper));
+        String increment = "useCount";
+        long useCount = redisUtil.incr(increment, 1);
+        redisUtil.expire(increment, 60);
+        if(useCount == 1){
+            Object object = redisUtil.get(id);
+            if(Objects.nonNull(object)){
+                log.info("从redis中获取数据:{}", object);
+                return ResponseData.success(object);
+            } else{
+                log.info("从db中获取数据");
+                QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+                queryWrapper.eq("ID", id);
+                User user = userService.getOne(queryWrapper);
+                redisUtil.set(user.getId(), user, 5);
+                return ResponseData.success(user);
+            }
+        } else {
+            return ResponseData.failure("请勿频繁调用接口");
+        }
     }
 
     /**

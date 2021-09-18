@@ -1,157 +1,22 @@
-2021-03-11 14:29:29.197 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
-2021-03-11 14:32:20.604 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
-2021-03-11 15:26:05.475 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.mochasoft.deliverycore.response.ResponseData com.mochasoft.deliveryweb.controller.MenuController.edit(com.mochasoft.deliverydomain.Menu)]
-2021-03-11 15:34:06.217 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.mochasoft.deliverycore.response.ResponseData com.mochasoft.deliveryweb.controller.MenuController.edit(com.mochasoft.deliverydomain.Menu)]
-2021-03-11 15:40:42.677 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 15:41:39.221 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 15:42:57.748 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 15:43:18.502 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
-### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
-### The error may involve com.mochasoft.deliverydao.mapper.MenuMapper.selectOne
-### The error occurred while handling results
-### SQL: SELECT  MENU_ID,MENU_ORDER,IS_PARENT,IS_EXT_LINK,MENU_URL,SUPER_MENU_ID,MENU_NAME,IS_OPEN_WIN  FROM su_delivery_menu_tree     WHERE (MENU_ID = ?)
-### Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8]
-2021-03-11 15:44:14.317 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 15:45:47.533 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 15:49:03.094 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 15:53:20.091 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 15:55:36.376 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 15:58:58.028 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
-### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
-### The error may involve com.mochasoft.deliverydao.mapper.MenuMapper.selectOne
-### The error occurred while handling results
-### SQL: SELECT  MENU_ID,MENU_ORDER,IS_PARENT,IS_EXT_LINK,MENU_URL,SUPER_MENU_ID,MENU_NAME,IS_OPEN_WIN  FROM su_delivery_menu_tree     WHERE (MENU_ID = ?)
-### Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8]
-2021-03-11 15:59:16.383 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8
-### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
-### The error may involve com.mochasoft.deliverydao.mapper.MenuMapper.selectOne
-### The error occurred while handling results
-### SQL: SELECT  MENU_ID,MENU_ORDER,IS_PARENT,IS_EXT_LINK,MENU_URL,SUPER_MENU_ID,MENU_NAME,IS_OPEN_WIN  FROM su_delivery_menu_tree     WHERE (MENU_ID = ?)
-### Cause: java.lang.IndexOutOfBoundsException: Index: 8, Size: 8]
-2021-03-11 16:02:30.806 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 16:03:28.478 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.UncategorizedSQLException: Error attempting to get column 'MENU_URL' from result set.  Cause: java.sql.SQLException: 无法转换为内部表示
-; uncategorized SQLException; SQL state [99999]; error code [17059]; 无法转换为内部表示; nested exception is java.sql.SQLException: 无法转换为内部表示]
-2021-03-11 16:12:18.440 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.mochasoft.deliverycore.response.ResponseData com.mochasoft.deliveryweb.controller.MenuController.edit(com.mochasoft.deliverydomain.Menu)]
-2021-03-11 16:12:49.321 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='et.menuId', mode=IN, javaType=class java.lang.Object, jdbcType=null, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #3 with JdbcType OTHER . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: java.sql.SQLException: 无效的列类型: 1111]
-2021-03-11 16:30:29.013 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2021-03-11 16:39:20.981 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.mochasoft.deliverycore.exception.GlobalExceptionHandler#serverError(Throwable)
-org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
-	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
-	at org.apache.catalina.connector.OutputBuffer.flushByteBuffer(OutputBuffer.java:776)
-	at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:681)
-	at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:386)
-	at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:364)
-	at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
-	at org.springframework.util.StreamUtils$NonClosingOutputStream.write(StreamUtils.java:287)
-	at com.fasterxml.jackson.core.json.UTF8JsonGenerator._flushBuffer(UTF8JsonGenerator.java:2161)
-	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1175)
-	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1008)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:452)
-	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:277)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181)
-	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124)
-	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:428)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:75)
-	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
-	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
-	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1320)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1131)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
-	at sun.nio.ch.SocketDispatcher.write0(Native Method)
-	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
-	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
-	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
-	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
-	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:135)
-	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
-	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
-	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1344)
-	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764)
-	at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:584)
-	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:528)
-	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:546)
-	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:110)
-	at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:193)
-	at org.apache.coyote.Response.doWrite(Response.java:601)
-	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:339)
-	... 65 common frames omitted
-2021-03-11 16:53:32.523 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.QueryTimeoutException: 
-### Error querying database.  Cause: java.sql.SQLTimeoutException: ORA-01013: 用户请求取消当前的操作
-
-### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: SELECT  MENU_ID,MENU_ORDER,IS_PARENT,IS_EXT_LINK,MENU_URL,SUPER_MENU_ID,MENU_NAME,IS_OPEN_WIN  FROM su_delivery_menu_tree
-### Cause: java.sql.SQLTimeoutException: ORA-01013: 用户请求取消当前的操作
-
-; ORA-01013: 用户请求取消当前的操作
-; nested exception is java.sql.SQLTimeoutException: ORA-01013: 用户请求取消当前的操作
-]
-2021-03-11 16:43:55.490 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
-ORA-12519, TNS:no appropriate service handler found
- 
-### The error may exist in com/mochasoft/deliverydao/mapper/MenuMapper.java (best guess)
-### The error may involve com.mochasoft.deliverydao.mapper.MenuMapper.selectPage
-### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
-ORA-12519, TNS:no appropriate service handler found
- ]
+2021-08-22 15:58:04.790 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 125690
+2021-08-22 15:58:04.791 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 125701
+2021-08-22 15:58:04.791 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 125706
+2021-08-22 15:58:04.791 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 125712
+2021-08-22 15:58:04.791 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 125722
+2021-08-22 16:06:17.284 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 122472
+2021-08-22 16:06:17.284 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 122485
+2021-08-22 16:06:17.284 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 122490
+2021-08-22 16:06:17.284 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 122497
+2021-08-22 16:06:17.285 [http-nio-8080-exec-1] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 122509
+2021-08-22 16:14:05.179 [http-nio-8080-exec-9] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 467673
+2021-08-22 17:12:09.653 [http-nio-8080-exec-7] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 130494
+2021-08-22 17:12:09.654 [http-nio-8080-exec-7] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 135601
+2021-08-22 17:12:09.654 [http-nio-8080-exec-7] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 135605
+2021-08-22 17:12:09.654 [http-nio-8080-exec-7] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 135609
+2021-08-22 17:12:09.655 [http-nio-8080-exec-7] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai, version : 1.2.4, lastPacketReceivedIdleMillis : 135615
+2021-08-22 17:26:39.914 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.EOFException]
+2021-08-22 17:29:19.196 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: ERR value is not an integer or out of range; nested exception is redis.clients.jedis.exceptions.JedisDataException: ERR value is not an integer or out of range]
+2021-08-22 17:31:03.237 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.EOFException]
+2021-08-22 17:31:04.449 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.EOFException]
+2021-08-22 17:32:54.976 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.EOFException]
+2021-08-22 17:36:15.799 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.data.redis.serializer.SerializationException: Cannot deserialize; nested exception is org.springframework.core.serializer.support.SerializationFailedException: Failed to deserialize payload. Is the byte array a result of corresponding serialization for DefaultDeserializer?; nested exception is java.io.EOFException]
