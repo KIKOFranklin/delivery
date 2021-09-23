@@ -1,7 +1,7 @@
 spring:
   redis:
     database: 0
-    host: 127.0.0.1
+    host: 192.168.0.103
     port: 6379
     jedis:
       pool:
@@ -13,7 +13,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.0.103:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
     password: wang2368821
     initialSize: 5
