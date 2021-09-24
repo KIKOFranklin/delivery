@@ -32,6 +32,7 @@ public class DictionaryController {
      * 分页获取所有用户信息.
      */
     @GetMapping("/{current}/{size}")
+    @JwtToken
     @ApiOperation(value = "分页获取字典信息", notes = "分页获取字典信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData getDics(@PathVariable final Long current, @PathVariable final Long size){
         return ResponseData.success(dictionaryService.page(new Page<>(current, size)));
@@ -41,6 +42,7 @@ public class DictionaryController {
      * 获取单个字典信息.
      */
     @GetMapping("/getDic/{id}")
+    @JwtToken
     @ApiOperation(value = "获取单个字典信息", notes = "获取单个字典信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData getDic(@PathVariable final String id){
         QueryWrapper<Dictionary> queryWrapper = new QueryWrapper<>();
@@ -64,6 +66,7 @@ public class DictionaryController {
      * 保存用户.
      */
     @PostMapping("/")
+    @JwtToken
     @ApiOperation(value = "保存字典信息", notes = "保存字典信息", httpMethod = "POST", response = ResponseData.class)
     public ResponseData saveUser(@RequestBody final Dictionary dictionary){
         return dictionaryService.save(dictionary) ? ResponseData.success("保存成功") : ResponseData.failure("保存失败");
@@ -73,6 +76,7 @@ public class DictionaryController {
      * 更新用户.
      */
     @PutMapping("/")
+    @JwtToken
     @ApiOperation(value = "更新字典信息", notes = "更新字典信息", httpMethod = "PUT", response = ResponseData.class)
     public ResponseData updateUser(@RequestBody final Dictionary dictionary){
         return dictionaryService.updateById(dictionary) ? ResponseData.success("更新成功") : ResponseData.failure("更新失败");
@@ -82,6 +86,7 @@ public class DictionaryController {
      * 删除用户.
      */
     @DeleteMapping("/{id}")
+    @JwtToken
     @ApiOperation(value = "删除字典信息", notes = "删除字典信息", httpMethod = "DELETE", response = ResponseData.class)
     public ResponseData deleteUser(@PathVariable final String id){
         QueryWrapper<Dictionary> queryWrapper = new QueryWrapper<>();

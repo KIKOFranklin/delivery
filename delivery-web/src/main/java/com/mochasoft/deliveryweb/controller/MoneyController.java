@@ -7,6 +7,7 @@ import com.mochasoft.deliverycore.response.ResponseData;
 import com.mochasoft.deliverycore.utils.ReflectUtil;
 import com.mochasoft.deliverydomain.Dictionary;
 import com.mochasoft.deliverydomain.Money;
+import com.mochasoft.deliverysecurity.jwt.JwtToken;
 import com.mochasoft.deliveryservice.DictionaryService;
 import com.mochasoft.deliveryservice.MoneyService;
 import io.swagger.annotations.Api;
@@ -40,6 +41,7 @@ public class MoneyController {
      * 分页获取所有用户信息.
      */
     @GetMapping("/{current}/{size}")
+    @JwtToken
     @ApiOperation(value = "分页获取交易信息", notes = "分页获取交易信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData getDics(@PathVariable final Long current, @PathVariable final Long size){
         IPage<Money> result = moneyService.page(
@@ -60,6 +62,7 @@ public class MoneyController {
      * 获取单个字典信息.
      */
     @GetMapping("/{id}")
+    @JwtToken
     @ApiOperation(value = "获取单个交易信息", notes = "获取单个交易信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData getDic(@PathVariable final String id){
         QueryWrapper<Money> queryWrapper = new QueryWrapper<>();
@@ -71,6 +74,7 @@ public class MoneyController {
      * 根据条件获取交易信息.
      */
     @PostMapping ("/query/{current}/{size}")
+    @JwtToken
     @ApiOperation(value = "根据条件获取交易信息", notes = "根据条件获取交易信息", httpMethod = "POST", response = ResponseData.class)
     public ResponseData getMoneyByParam(@RequestBody final Money money,
                                         @PathVariable final Long current,
@@ -99,6 +103,7 @@ public class MoneyController {
      * 保存用户.
      */
     @PostMapping("/")
+    @JwtToken
     @ApiOperation(value = "保存交易信息", notes = "保存交易信息", httpMethod = "POST", response = ResponseData.class)
     public ResponseData saveUser(@RequestBody final Money money){
         money.setDate(money.getDate().plusDays(1));
@@ -109,6 +114,7 @@ public class MoneyController {
      * 更新用户.
      */
     @PutMapping("/")
+    @JwtToken
     @ApiOperation(value = "更新交易信息", notes = "更新交易信息", httpMethod = "PUT", response = ResponseData.class)
     public ResponseData updateUser(@RequestBody final Money money){
         money.setDate(money.getDate().plusDays(1));
@@ -119,6 +125,7 @@ public class MoneyController {
      * 删除用户.
      */
     @DeleteMapping("/{id}")
+    @JwtToken
     @ApiOperation(value = "删除交易信息", notes = "删除交易信息", httpMethod = "DELETE", response = ResponseData.class)
     public ResponseData deleteUser(@PathVariable final String id){
         QueryWrapper<Money> queryWrapper = new QueryWrapper<>();

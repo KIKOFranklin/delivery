@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mochasoft.deliverycore.response.ResponseData;
 import com.mochasoft.deliverydomain.Menu;
+import com.mochasoft.deliverysecurity.jwt.JwtToken;
 import com.mochasoft.deliveryservice.MenuService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,6 +30,7 @@ public class MenuController {
      * @return 菜单List.
      */
     @GetMapping("/")
+    @JwtToken
     @ApiOperation(value = "获取所有菜单信息", notes = "获取所有菜单信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData getMenus(){
         return ResponseData.success(menuService.getMenu());
@@ -40,6 +42,7 @@ public class MenuController {
      * @return 菜单实体
      */
     @GetMapping("/{flag}")
+    @JwtToken
     @ApiOperation(value = "获取单个菜单信息", notes = "路径参数flag为传入的menuId", httpMethod = "GET", response = ResponseData.class)
     public ResponseData getMenuItem(@PathVariable final String flag) {
         QueryWrapper<Menu> queryWrapper = new QueryWrapper<>();
@@ -48,6 +51,7 @@ public class MenuController {
     }
 
     @GetMapping("/{current}/{size}")
+    @JwtToken
     @ApiOperation(value = "分页查询菜单信息", notes = "current当前页 size当前页数据长度", httpMethod = "GET", response = ResponseData.class)
     public ResponseData getMenusByPage(@PathVariable final Long current, @PathVariable final Long size){
         return ResponseData.success(menuService.page(new Page<>(current, size)));
@@ -58,6 +62,7 @@ public class MenuController {
      * @return 系统提示.
      */
     @PostMapping("/")
+    @JwtToken
     @ApiOperation(value = "保存菜单信息", notes = "menuId不能为空", httpMethod = "POST", response = ResponseData.class)
     public ResponseData createMenu(@RequestBody final Menu menu) {
         return menuService.save(menu) ? ResponseData.success("保存成功") : ResponseData.failure("保存失败");
@@ -68,6 +73,7 @@ public class MenuController {
      * @return 系统提示
      */
     @PutMapping("/")
+    @JwtToken
     @ApiOperation(value = "编辑菜单信息", notes = "menuId不能为空", httpMethod = "PUT", response = ResponseData.class)
     public ResponseData edit(@RequestBody final Menu menu) {
         return menuService.updateById(menu) ? ResponseData.success("修改成功") : ResponseData.failure("修改失败");
@@ -78,6 +84,7 @@ public class MenuController {
      * @return 系统提示
      */
     @DeleteMapping("/{flag}")
+    @JwtToken
     @ApiOperation(value = "删除菜单信息", notes = "menuId不能为空", httpMethod = "DELETE", response = ResponseData.class)
     public ResponseData delete(@PathVariable final String flag) {
         QueryWrapper<Menu> queryWrapper  = new QueryWrapper<>();

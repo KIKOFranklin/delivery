@@ -2,6 +2,7 @@ package com.mochasoft.deliveryweb.controller;
 
 import com.mochasoft.deliverycore.response.ResponseData;
 import com.mochasoft.deliverydomain.vo.MoneyVO;
+import com.mochasoft.deliverysecurity.jwt.JwtToken;
 import com.mochasoft.deliveryservice.EchartService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -26,24 +27,28 @@ public class EchartController {
     private EchartService echartService;
 
     @RequestMapping("/sum")
+    @JwtToken
     @ApiOperation(value = "获取每日金额汇总图表信息", notes = "获取每日金额汇总图表信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData<List<MoneyVO>> getSumEchartData(){
         return echartService.generateSumEchartData();
     }
 
     @RequestMapping("/attr/{param}")
+    @JwtToken
     @ApiOperation(value = "获取交易属性图表信息", notes = "获取交易属性图表信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData<List<MoneyVO>> getAttrEchartData(@PathVariable final String param){
         return echartService.generateAttrEchartData(param);
     }
 
     @RequestMapping("/way/{param}")
+    @JwtToken
     @ApiOperation(value = "获取交易途径图表信息", notes = "获取交易途径图表信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData<List<MoneyVO>> getWayEchartData(@PathVariable final String param){
         return echartService.generateWayEchartData(param);
     }
 
     @RequestMapping("/ispay/{param}")
+    @JwtToken
     @ApiOperation(value = "获取支出/收入图表信息", notes = "获取支出/收入图表信息", httpMethod = "GET", response = ResponseData.class)
     public ResponseData<List<MoneyVO>> getIsPayEchartData(@PathVariable final String param){
         return echartService.generateIspayEchartData(param);
