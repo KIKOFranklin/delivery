@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mochasoft.deliverycore.exception.ServiceException;
 import com.mochasoft.deliverycore.response.ResponseData;
 import com.mochasoft.deliverycore.utils.DateUtil;
+import com.mochasoft.deliverydao.mapper.DictionaryMapper;
 import com.mochasoft.deliverydomain.Dictionary;
 import com.mochasoft.deliverydomain.Money;
 import com.mochasoft.deliverydomain.vo.MoneyVO;
@@ -30,10 +31,11 @@ public class EchartServiceImpl implements EchartService {
     @Autowired
     private DictionaryService dictionaryService;
 
+
     @Override
     public ResponseData<List<MoneyVO>> generateSumEchartData() {
         try {
-            List<LocalDate> dates = DateUtil.get15DaysByNow();
+            List<LocalDate> dates = DateUtil.get7DaysByNow();
             List<MoneyVO> result = new ArrayList<>();
             dates.forEach(t -> {
                 double sumAmount = 0;
@@ -55,11 +57,12 @@ public class EchartServiceImpl implements EchartService {
     public ResponseData<List<MoneyVO>> generateAttrEchartData(final String param) {
         List<MoneyVO> result = new ArrayList<>();
         int length = param.length();
+        int loopIndex = dictionaryService.count(new QueryWrapper<Dictionary>().eq("DIC_NAME", "MONEY_ATTR")) - 1;
         switch (length) {
             case 4:
-                return echartDataGenerator(result, dbResultGenerator(0, param), param, 7, "MONEY_ATTR", 0);
+                return echartDataGenerator(result, dbResultGenerator(0, param), param, loopIndex, "MONEY_ATTR", 0);
             case 7:
-                return echartDataGenerator(result, dbResultGenerator(1, param), param, 7, "MONEY_ATTR", 0);
+                return echartDataGenerator(result, dbResultGenerator(1, param), param, loopIndex, "MONEY_ATTR", 0);
             default: {
                 throw new ServiceException("月份或年份参数异常");
             }
@@ -70,11 +73,12 @@ public class EchartServiceImpl implements EchartService {
     public ResponseData<List<MoneyVO>> generateWayEchartData(final String param) {
         List<MoneyVO> result = new ArrayList<>();
         int length = param.length();
+        int loopIndex = dictionaryService.count(new QueryWrapper<Dictionary>().eq("DIC_NAME", "MONEY_WAY")) - 1;
         switch (length) {
             case 4:
-                return echartDataGenerator(result, dbResultGenerator(0, param), param, 3, "MONEY_WAY", 1);
+                return echartDataGenerator(result, dbResultGenerator(0, param), param, loopIndex, "MONEY_WAY", 1);
             case 7:
-                return echartDataGenerator(result, dbResultGenerator(1, param), param, 3, "MONEY_WAY", 1);
+                return echartDataGenerator(result, dbResultGenerator(1, param), param, loopIndex, "MONEY_WAY", 1);
             default: {
                 throw new ServiceException("月份或年份参数异常");
             }
@@ -85,11 +89,12 @@ public class EchartServiceImpl implements EchartService {
     public ResponseData<List<MoneyVO>> generateIspayEchartData(final String param) {
         List<MoneyVO> result = new ArrayList<>();
         int length = param.length();
+        int loopIndex = dictionaryService.count(new QueryWrapper<Dictionary>().eq("DIC_NAME", "MONEY_ISPAY")) - 1;
         switch (length) {
             case 4:
-                return echartDataGenerator(result, dbResultGenerator(0, param), param, 1, "MONEY_ISPAY", 2);
+                return echartDataGenerator(result, dbResultGenerator(0, param), param, loopIndex, "MONEY_ISPAY", 2);
             case 7:
-                return echartDataGenerator(result, dbResultGenerator(1, param), param, 1, "MONEY_ISPAY", 2);
+                return echartDataGenerator(result, dbResultGenerator(1, param), param, loopIndex, "MONEY_ISPAY", 2);
             default: {
                 throw new ServiceException("月份或年份参数异常");
             }

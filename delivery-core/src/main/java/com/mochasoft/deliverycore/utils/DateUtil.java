@@ -376,10 +376,10 @@ public final class DateUtil {
         return null;
     }
 
-    public static List<LocalDate> get15DaysByNow(){
+    public static List<LocalDate> get7DaysByNow(){
         LocalDate localDate = LocalDate.now();
         List<LocalDate> result = new ArrayList<>();
-        for (long i = -7; i <= 7; i++) {
+        for (long i = -7; i <= 0; i++) {
             result.add(localDate.plusDays(i));
         }
         return result;

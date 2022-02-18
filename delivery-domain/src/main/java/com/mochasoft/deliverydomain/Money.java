@@ -74,4 +74,22 @@ public class Money {
     @Between("end")
     @TableField(exist = false, value = "DATE")
     private LocalDate endDate;
+
+    /**
+     * 交易属性名称
+     */
+    @TableField(exist = false)
+    private String attributeName;
+
+    /**
+     * 交易途径名称
+     */
+    @TableField(exist = false)
+    private String wayName;
+
+    /**
+     * 支出/收入名称
+     */
+    @TableField(exist = false)
+    private String isPayName;
 }

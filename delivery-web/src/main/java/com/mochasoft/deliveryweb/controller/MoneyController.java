@@ -38,7 +38,7 @@ public class MoneyController {
     private DictionaryService dictionaryService;
 
     /**
-     * 分页获取所有用户信息.
+     * 分页获取所有交易信息.
      */
     @GetMapping("/{current}/{size}")
     @JwtToken
@@ -48,13 +48,13 @@ public class MoneyController {
                 new Page<>(current, size),
                 new QueryWrapper<Money>().orderBy(true,false,"DATE")
         );
+        result.getRecords().forEach(t -> {
+                    t.setAttributeName(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getAttribute()).eq("DIC_NAME", "MONEY_ATTR")).getDicValue());
+                    t.setWayName(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getWay()).eq("DIC_NAME", "MONEY_WAY")).getDicValue());
+                    t.setIsPayName(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getIsPay()).eq("DIC_NAME", "MONEY_ISPAY")).getDicValue());
+        });
         return ResponseData.success(
-                result.setRecords(result.getRecords()
-                                            .stream().peek(t -> {
-                                                t.setAttribute(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getAttribute()).eq("DIC_NAME", "MONEY_ATTR")).getDicValue());
-                                                t.setWay(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getWay()).eq("DIC_NAME", "MONEY_WAY")).getDicValue());
-                                                t.setIsPay(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getIsPay()).eq("DIC_NAME", "MONEY_ISPAY")).getDicValue());
-                }).collect(Collectors.toList()))
+                result.setRecords(result.getRecords())
         );
     }
 
@@ -89,13 +89,13 @@ public class MoneyController {
                 new Page<>(current, size),
                 ReflectUtil.generateWrapperByReflection(money)
         );
+        result.getRecords().forEach(t -> {
+            t.setAttributeName(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getAttribute()).eq("DIC_NAME", "MONEY_ATTR")).getDicValue());
+            t.setWayName(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getWay()).eq("DIC_NAME", "MONEY_WAY")).getDicValue());
+            t.setIsPayName(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getIsPay()).eq("DIC_NAME", "MONEY_ISPAY")).getDicValue());
+        });
         return ResponseData.success(
-                result.setRecords(result.getRecords()
-                        .stream().peek(t -> {
-                            t.setAttribute(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getAttribute()).eq("DIC_NAME", "MONEY_ATTR")).getDicValue());
-                            t.setWay(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getWay()).eq("DIC_NAME", "MONEY_WAY")).getDicValue());
-                            t.setIsPay(dictionaryService.getOne(new QueryWrapper<Dictionary>().eq("DIC_ID", t.getIsPay()).eq("DIC_NAME", "MONEY_ISPAY")).getDicValue());
-                        }).collect(Collectors.toList()))
+                result.setRecords(result.getRecords())
         );
     }
     

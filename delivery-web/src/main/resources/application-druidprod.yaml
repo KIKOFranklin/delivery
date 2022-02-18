@@ -1,7 +1,7 @@
 spring:
   redis:
     database: 0
-    host: docker.for.mac.localhost
+    host: host.docker.internal
     port: 6379
     jedis:
       pool:
@@ -13,7 +13,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://docker.for.mac.localhost:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://host.docker.internal:3306/tallybook?useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
     password: wang2368821
     initialSize: 5
